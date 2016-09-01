@@ -42,6 +42,12 @@ Fundamentos del SO de Linux.
 | rm -f | Forzar eliminación de un archivo. |
 | rm -i | Eliminar archivo pero primero solicita confirmación del usuario. |
 | rm -rf | Fozar la eliminación del directorio y todo su contenido del arbol de archivos y carpetas que tenga dentro. |
+| diff | Compara archivos o carpetas |
+| diff -c | Proporciona una lista de las diferencias que se compone de 3 líneas de contexto antes y después de las líneas que difieren en contenido. |
+| diff -r | Se utiliza para comparar recursivamente los subdirectorios, así como el directorio actual. |
+| diff -i | Ignorar el caso de las letras. |
+| diff -w | Ignorar la diferencia de espacios y tab.
+| diff `<filename1> <filename2>` | Comparar dos archivos. |
 
 
 ### Wildcards
