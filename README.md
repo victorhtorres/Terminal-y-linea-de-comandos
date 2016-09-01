@@ -77,8 +77,11 @@ Fundamentos del SO de Linux.
 
 ## Directorios
 
+La estructura de directorios en Linux:
+
 | Nombre directorio | Uso |
 | ----- | ---- |
+| / | La raiz del arbol de directorios del sistema |
 | /bin /sbin | Contiene los binarios ejecutables, comandos esenciales que se utilizan en el modo de un solo usuario y comandos esenciales requeridos por todos los usuarios del sistema. el sbin se utiliza para binarios esenciales relacionados con la administración del sistema, tales como ifconfig y shutdown. |
 | /dev | Contiene nodos de dispositivos, un tipo de pseudo-archivo utilizado por la mayoría de los dispositivos de hardware y software, a excepción de los dispositivos de red. |
 | /var | Contiene archivos que se espera que cambien de tamaño y contenido cuando el sistema está en funcionamiento (var significa variable). |
