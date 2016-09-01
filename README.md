@@ -21,3 +21,7 @@ Fundamentos del SO de Linux.
 | tree | Muestra las carpetas del sistema en arbol. |
 | locate nombreBusqueda | Buscar un archivo, caperta, etc... que contenga la cadena argumentada. Si no genera resultados, pruebe primer con `sudo updatedb` y realice de nuevo la búsqueda. |
 | cp valorACopiar destino | Copiar y pegar en una ruta o en un archivo nuevo. |
+| pipeline `$ command1 | command2 | command3` | Sirve para ejecutar diferentes comandos al mismo tiempo. |
+| Wildcard | Descripción |
+| ----- | ---- |
+| ? | Coincidir con cualquier caracter de la búsqueda. |
