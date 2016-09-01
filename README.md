@@ -22,6 +22,13 @@ Fundamentos del SO de Linux.
 | locate nombreBusqueda | Buscar un archivo, caperta, etc... que contenga la cadena argumentada. Si no genera resultados, pruebe primer con `sudo updatedb` y realice de nuevo la búsqueda. |
 | cp valorACopiar destino | Copiar y pegar en una ruta o en un archivo nuevo. |
 | pipeline `$ command1 | command2 | command3` | Sirve para ejecutar diferentes comandos al mismo tiempo. |
+
 | Wildcard | Descripción |
 | ----- | ---- |
-| ? | Coincidir con cualquier caracter de la búsqueda. |
+| ? | Coincidir con cualquier caracter individual de la búsqueda. |
+| * | Coincidir con cualquier cadena de caracteres de la búsqueda. |
+| [set] | Coincidir con cualquier caracter en un conjunto de caracteres. Por ejemplo, [adf] podría coincidir cualquier ocurrencia con "a", "d" o "f" |
+| [!set] | Coincidir con cualquier caracter que no esté en el conjunto de caracteres especificados |
+| find | Buscar un archivo en un lugar especifico o por tamaño, nombre, byte, etc... |
+
+
