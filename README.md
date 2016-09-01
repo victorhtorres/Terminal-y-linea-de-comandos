@@ -8,6 +8,7 @@ Fundamentos del SO de Linux.
  - [Wildcards](#wildcards).
  - [Instalaciones](#instalaciones).
  - [Utilitaria](#utilitaria).
+- [Directorios](#directorios).
 
 ## Lineas de comando
 
@@ -73,3 +74,28 @@ Fundamentos del SO de Linux.
 | clear | Borra el historial de impresiones que tenga la consola. |
 | df -Th | Muestra una estadísticas del uso de los archivos de sistema y su capacidad de espacio en disco. |
 | ps | Produce una lista de los procesos junto con la información de estado del sistema. |
+
+## Directorios
+
+| Nombre directorio | Uso |
+| ----- | ---- |
+| /bin | /sbin | Contiene los binarios ejecutables, comandos esenciales que se utilizan en el modo de un solo usuario y comandos esenciales requeridos por todos los usuarios del sistema. el sbin se utiliza para binarios esenciales relacionados con la administración del sistema, tales como ifconfig y shutdown. |
+| /dev | Contiene nodos de dispositivos, un tipo de pseudo-archivo utilizado por la mayoría de los dispositivos de hardware y software, a excepción de los dispositivos de red. |
+| /var | Contiene archivos que se espera que cambien de tamaño y contenido cuando el sistema está en funcionamiento (var significa variable). |
+| /etc | Es el home de los archivos de configuración del sistema. No contiene programas binarios, aunque hay algunas secuencias de comandos ejecutables |
+| /boot | Contiene los pocos archivos esenciales necesarios para arrancar el sistema. |
+| /lib | Contiene las librerias (código común compartida por las aplicaciones y necesario para ellos para correr) para los programas esenciales en / bin y / sbin |
+| /media | Normalmente donde se encuentra en donde se montan los medios extraíbles, como CD, DVD y unidades USB. |
+| /opt | Paquetes de aplicaciones de software opcionales. |
+| /sys | Pseudo sistema de archivos virtual con información sobre el sistema y el hardware. Puede ser utilizado para modificar los parámetros del sistema y para fines de depuración. |
+| /srv | Datos específicos del sitio servido por el sistema. rara vez se utiliza. |
+| /usr | Multiusuario aplicaciones, servicios y datos. |
+| /usr/include | Archivos de cabecera utilizados para compilar aplicaciones. |
+| /usr/lib | Las librerias de programas en / usr/bin y /usr/sbin. |
+| /usr/lib64 | Librerias de 64 bits para programas de 64 bits en /usr/bin y /usr/sbin. |
+| /usr/sbin | Binarios del sistema no esenciales, tales como los demonios del sistema. |
+| /usr/share | Los datos compartidos utilizados por las aplicaciones, generalmente independiente de la arquitectura. |
+| /usr/src | El código fuente, por lo general para el núcleo de Linux. |
+| /usr/X11R6 | Archivos de configuración de X Window. Generalmente obsoleto. |
+| /usr/local | Los datos y programas específicos para la máquina local. Subdirectorios incluyen bin, sbin, lib, compartir incluir, etc. |
+| /usr/bin | Este es el directorio principal de comandos ejecutables en el sistema. |
