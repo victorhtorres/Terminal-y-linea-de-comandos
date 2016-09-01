@@ -10,6 +10,8 @@ Fundamentos del SO de Linux.
  - [Comprensión de archivos](#Compresion-de-archivos).
  - [Utilitaria](#utilitaria).
 - [Directorios](#directorios).
+- [Shell Scripts](#shell-scripts).
+
 
 ## Lineas de comando
 
@@ -122,3 +124,53 @@ La definición de directorios en Linux:
 | /usr/X11R6 | Archivos de configuración de X Window. Generalmente obsoleto. |
 | /usr/local | Los datos y programas específicos para la máquina local. Subdirectorios incluyen bin, sbin, lib, compartir incluir, etc. |
 | /usr/bin | Este es el directorio principal de comandos ejecutables en el sistema. |
+
+
+## Shell Scripts
+
+Utilizado para automatizar tareas repetitivas. Básicamente, se ejecutará los mismos comandos que se usan en la terminal, pero ahora pensado para hacerlo repetida veces, pero también, para combinar una cantidad larga de secuencia de comandos en uno simple.
+
+Sintaxis:
+
+```shell
+
+#!/bin/bash
+
+# code here...
+
+```
+
+El #!/bin/bash en la primera línea debe ser reconocido por cualquier persona que ha desarrollado algún tipo de secuencia de comandos en entornos UNIX. La primera línea del script, que comienza con #!, contiene la ruta completa del intérprete de comandos (en este caso /bin/bash) que se va a utilizar en el archivo.
+
+Otros posibles interpretadores de shell:
+
+`
+/bin/sh
+/bin/bash
+/bin/tcsh
+/bin/csh
+/bin/ksh
+`
+
+*Imprimir Hello World*
+
+Creamos el archivo `hello.sh`
+
+`$ nano hello.sh`
+
+Escribimos el siguiente script:
+
+```shell
+
+#!/bin/bash
+
+echo "Hello World"
+
+```
+
+Para ejecutar el archivo hello.sh, podemos hacerlo de dos formas:
+
+`$ ./hello.sh`
+
+`$ bash hello.sh`
+
