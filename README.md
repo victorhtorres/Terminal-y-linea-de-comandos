@@ -93,6 +93,7 @@ Fundamentos del SO de Linux.
 | clear | Borra el historial de impresiones que tenga la consola. |
 | df -Th | Muestra una estadísticas del uso de los archivos de sistema y su capacidad de espacio en disco. |
 | ps | Produce una lista de los procesos junto con la información de estado del sistema. |
+| nano | Editor de texto por defecto. |
 
 ## Directorios
 
