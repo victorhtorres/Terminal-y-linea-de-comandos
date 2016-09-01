@@ -77,7 +77,7 @@ Fundamentos del SO de Linux.
 
 ## Directorios
 
-La estructura de directorios en Linux:
+La definición de directorios en Linux:
 
 | Nombre directorio | Uso |
 | ----- | ---- |
