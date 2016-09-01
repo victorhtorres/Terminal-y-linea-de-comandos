@@ -7,6 +7,7 @@ Fundamentos del SO de Linux.
  - [Interacción con archivos y carpetas](#interaccion-con-archivos-y-carpetas).
  - [Wildcards](#wildcards).
  - [Instalaciones](#instalaciones).
+ - [Comprensión de archivos](#Compresion-de-archivos).
  - [Utilitaria](#utilitaria).
 - [Directorios](#directorios).
 
@@ -48,6 +49,8 @@ Fundamentos del SO de Linux.
 | diff -i | Ignorar el caso de las letras. |
 | diff -w | Ignorar la diferencia de espacios y tab.
 | diff `<filename1> <filename2>` | Comparar dos archivos. |
+| diff3 MY-FILE COMMON-FILE YOUR-FILE | Compara tres archivos al mismo tiempo. |
+
 
 
 ### Wildcards
@@ -71,6 +74,16 @@ Fundamentos del SO de Linux.
 | sudo apt-get remove NombrePaquete | Elimina el paquete. |
 | sudo dpkg -L | Lista todos los paquetes instalados. |
 | sudo apt-get upgrade | Actualiza los paquetes que tengan actualizaciones disponibles. |
+
+### Compresion de archivos
+
+| Comando | Descripción |
+| ----- | ---- |
+| gzip | La utilidad de compresión más utilizado en Linux |
+| bzip2 | Produce archivos significativamente menores que los producidos por gzip. |
+| xz | La utilidad de compresión eficiente el espacio más utilizado en Linux. |
+| zip | A menudo se requiere para examinar y descomprimir archivos de otros sistemas operativos. |
+
 
 ### Utilitaria
 
