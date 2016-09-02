@@ -14,6 +14,7 @@ Fundamentos del SO de Linux.
  - [Imprimir Hello World](#imprimir-hello-world).
  - [Uso de variables temporales](#uso-de-variables-temporales).
  - [Visualización de valores de retorno](#visualizacion-de-valores-de-retorno).
+ - [Sintaxis básica y caracteres especiales](#sintaxis-basica-y-caracteres-especiales).
 
 
 ## Lineas de comando
@@ -222,3 +223,47 @@ $ echo $?
 
 ```
 
+### Sintaxis basica y caracteres especiales
+
+| Caracter | Descripción |
+| ----- | ---- |
+| # | Para realizar comentarios de una linea. |
+| \ | Se utiliza al final de una línea para indicar la continuación a la siguiente línea. |
+| ; | Se utiliza para interpretar lo que sigue como un nuevo comando. |
+| $ | Indica que lo siguiente es una variable. |
+
+### Funciones
+
+Sintaxis de declaración y llamada de la función:
+
+```shell
+
+printHello () {
+       echo "Hello world"
+    }
+
+printHello;
+
+```
+
+Puedo pasar argumentos sin necesidad de declararlos, solo mencionando con el nombre de variable `$1`, `$2`, `$3`, etc...
+
+Ejemplo con un parámetro:
+
+```shell
+
+printHello () {
+       echo "Hello world" $1
+    }
+
+printHello "VICTOR";
+
+```
+
+Ejemplo con dos parámetro:
+
+printHello () {
+       echo "Hello world" $1 $2
+    }
+
+printHello "VICTOR" "TORRES";
