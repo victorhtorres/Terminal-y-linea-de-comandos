@@ -13,6 +13,7 @@ Fundamentos del SO de Linux.
 - [Shell Scripts](#shell-scripts).
  - [Imprimir Hello World](#imprimir-hello-world).
  - [Uso de variables temporales](#uso-de-variables-temporales).
+ - [Visualización de valores de retorno](#visualizacion-de-valores-de-retorno).
 
 
 ## Lineas de comando
@@ -192,3 +193,32 @@ Ejemplo:
    echo $sname
 
 ```
+
+### Visualizacion de valores de retorno
+
+Todo script o comando ejecutado, retorna un valor temporal para saber si el proceso fue exitoso o no. Para conocer ese valor y manipular de el, se puede ver como `$ echo $?`. Retorna el valor 0, si el proceso fue exitoso, de lo contrario retorna un valor diferente a cero.
+
+Ejemplo para un proceso exitoso:
+
+```shell
+
+$ ls /etc/passwd
+/etc/ passwd
+
+$ echo $?
+0
+
+```
+
+Ejemplo para un proceso no exitoso:
+
+```shell
+
+$ ls /foo/foo
+ls: cannot access..
+
+$ echo $?
+2
+
+```
+
