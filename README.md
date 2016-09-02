@@ -15,6 +15,7 @@ Fundamentos del SO de Linux.
  - [Uso de variables temporales](#uso-de-variables-temporales).
  - [Visualización de valores de retorno](#visualizacion-de-valores-de-retorno).
  - [Sintaxis básica y caracteres especiales](#sintaxis-basica-y-caracteres-especiales).
+ - [Pasando argumentos al script](#pasando-argumentos-al-script).
 
 
 ## Lineas de comando
@@ -296,3 +297,36 @@ Validamos que la variable fue creada y exportada:
 `$ export`
 
 En la impresión de los resultados, encontraremos la variable creada `VERSION=value` y ahora puede ser usada en un script como `$VERSION`.
+
+### Pasando argumentos al script
+
+Antes de ejecutar el script, podemos enviarle parametros de números o letras y atraparlos en el archivo con $0, $1, $2, etc..., $*, $#.
+
+Ejemplo:
+
+```shell
+#!/bin/bash
+
+echo "Nombre del script: " $0;
+echo "Parámetro uno: " $1;
+echo "Parámetro dos: " $2;
+echo "Todos los parámetros: " $*
+echo "Número de parámetros: " $#
+```
+
+Correr el script con parámetros:
+
+`$ bash nombreScript.sh Hola Mundo`
+
+Imprime:
+
+```plain
+
+Nombre del script: nombreScript.sh
+Parámetro uno: Hola
+Parámetro dos: Mundo
+Todos los parámetros: Hola Mundo
+Número de parámetros: 2
+
+```
+
