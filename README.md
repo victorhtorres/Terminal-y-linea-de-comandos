@@ -262,8 +262,25 @@ printHello "VICTOR";
 
 Ejemplo con dos parámetro:
 
+
+```shell
 printHello () {
        echo "Hello world" $1 $2
     }
 
 printHello "VICTOR" "TORRES";
+```
+
+### Sustitucion de comandos
+
+A veces, puede que tenga que sustituir el resultado de un comando como parte de otro comando.
+
+Ejemplo:
+
+`$ echo cd /lib/modules/$(uname -r)/`
+
+Imprime:
+
+`cd /lib/modules/3.13.0-93-generic/`
+
+
