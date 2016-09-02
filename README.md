@@ -283,4 +283,16 @@ Imprime:
 
 `cd /lib/modules/3.13.0-93-generic/`
 
+### Exportar variables
 
+Podemos crear y declarar una variable, para luego ser exportada y utilizada en un script.
+
+Ejemplo:
+
+`$ VERSION=$(unam -r); export VERSION`
+
+Validamos que la variable fue creada y exportada:
+
+`$ export`
+
+En la impresión de los resultados, encontraremos la variable creada `VERSION=value` y ahora puede ser usada en un script como `$VERSION`.
