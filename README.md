@@ -11,6 +11,8 @@ Fundamentos del SO de Linux.
  - [Utilitaria](#utilitaria).
 - [Directorios](#directorios).
 - [Shell Scripts](#shell-scripts).
+ - [Imprimir Hello World](#imprimir-hello-world).
+ - [Uso de variables temporales](#uso-de-variables-temporales).
 
 
 ## Lineas de comando
@@ -152,7 +154,7 @@ Otros posibles interpretadores de shell:
 /bin/ksh
 `
 
-*Imprimir Hello World*
+### Imprimir Hello World
 
 Creamos el archivo `hello.sh`
 
@@ -174,3 +176,19 @@ Para ejecutar el archivo hello.sh, podemos hacerlo de dos formas:
 
 `$ bash hello.sh`
 
+### Uso de variables temporales
+
+Usamos el caracter `$` para denotar que una cadena escrita, es una variable temporal.
+
+Ejemplo:
+
+```shell
+
+#!/bin/bash
+   # Interactive reading of variables
+   echo "ENTER YOUR NAME"
+   read sname
+   # Display of variable values
+   echo $sname
+
+```
