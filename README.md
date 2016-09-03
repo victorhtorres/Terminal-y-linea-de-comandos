@@ -16,6 +16,8 @@ Fundamentos del SO de Linux.
  - [Visualización de valores de retorno](#visualizacion-de-valores-de-retorno).
  - [Sintaxis básica y caracteres especiales](#sintaxis-basica-y-caracteres-especiales).
  - [Pasando argumentos al script](#pasando-argumentos-al-script).
+ - [Condicional if](#condiciona-if).
+  - [Pruebas de archivos](#pruebas-de-archivos).
 
 
 ## Lineas de comando
@@ -329,4 +331,59 @@ Todos los parámetros: Hola Mundo
 Número de parámetros: 2
 
 ```
+
+### Condicional if
+
+Una condición es evaluada y si es exitosa, se realiza lo que está dentro del "then", de lo contrario, se ejecuta el "else".
+
+- Una condición puede devolver 0, para el caso exitoso.
+- Se puede hacer comparaciones numéricas o de cadenas.
+- Validar existencia de archivos o permisos.
+
+Sintaxis:
+
+```plain
+#!/bin/bash
+
+
+if condition
+then
+       statements
+else
+       statements
+fi
+
+```
+
+Ejemplo:
+
+```shell
+#!/bin/bash
+
+file=$1
+
+if [$file]
+then
+	echo "The $file exist."
+else
+	echo "The $file does not exist."
+fi
+
+```
+
+#### Pruebas de archivos
+
+Las posibles condiciones para trabajar con archivos en la declaración del if.
+
+| Condición | Significado |
+| ----- | ---- |
+| -e file | Comprueba si el archivo existe. |
+| -d file | Comprueba si el archivo es un directorio. |
+| -f file | Compruebe si el archivo es un archivo normal (es decir, no es un enlace simbólico, nodo de dispositivo, directorio, etc.). |
+| -s file | Compruebe si el archivo es de tamaño distinto de cero. |
+| -g file | Compruebe si el archivo tiene el conjunto de sgid. |
+| -u file | Compruebe si el archivo tiene el conjunto suid. |
+| -r file | Comprueba si el archivo tiene permiso de lectura. |
+| -w file | Comprueba si el archivo tiene permiso de escritura. |
+| -x file | Comprueba si el archivo es ejecutable. |
 
