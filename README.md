@@ -18,6 +18,7 @@ Fundamentos del SO de Linux.
  - [Pasando argumentos al script](#pasando-argumentos-al-script).
  - [Condicional if](#condiciona-if).
   - [Pruebas de archivos](#pruebas-de-archivos).
+  - [Pruebas con cadenas](#pruebas-con-cadenas).
 
 
 ## Lineas de comando
@@ -393,6 +394,20 @@ Ejemplo:
 
 if [ -f /etc/passwd ] ; then
     ACTION
+fi
+
+```
+
+#### Pruebas con cadenas
+
+Para comparar cadenas en la sentencia del if, se usa el `string1 == string2`.
+
+Ejemplo:
+
+```plain
+
+if [ string1 == string2 ] ; then
+   ACTION
 fi
 
 ```
