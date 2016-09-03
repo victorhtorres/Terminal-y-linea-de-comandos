@@ -412,4 +412,16 @@ fi
 
 ```
 
+#### Pruebas numericas
 
+Para comparar números en la sentencia del if, se tiene los siguientes operadores:
+
+
+| Operador | Significado |
+| ----- | ---- |
+| -eq | Igual que |
+| -ne | No igual que |
+| -gt | Mayor que |
+| -lt | Menor que |
+| -ge | Mayor o igual que |
+| -le | Menor o igual que |
