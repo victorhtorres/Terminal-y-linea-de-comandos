@@ -387,3 +387,14 @@ Las posibles condiciones para trabajar con archivos en la declaración del if.
 | -w file | Comprueba si el archivo tiene permiso de escritura. |
 | -x file | Comprueba si el archivo es ejecutable. |
 
+Ejemplo:
+
+```plain
+
+if [ -f /etc/passwd ] ; then
+    ACTION
+fi
+
+```
+
+
