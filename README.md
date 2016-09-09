@@ -413,7 +413,7 @@ fi
 
 ```
 
-#### Operadores relaciones
+#### Operadores relacionales
 
 Para comparar números en la sentencia del if, se tiene los siguientes operadores:
 
