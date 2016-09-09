@@ -20,6 +20,7 @@ Fundamentos del SO de Linux.
   - [Pruebas de archivos](#pruebas-de-archivos).
   - [Pruebas con cadenas](#pruebas-con-cadenas).
   - [Operadores relacionales](#operadores-relacionales).
+  - [Expresiones aritméticas](#expresiones-aritmeticas).
 
 
 ## Lineas de comando
@@ -447,4 +448,18 @@ if ["$AGE" -lt 20] || ["$AGE" -ge 50]; then
 fi
 
 ```
+
+#### Expresiones aritmeticas
+
+Existen tres métodos para tal fin, aunque una ya es obsoleta, la cual, es el uso de la acción `expr`, seguida de la operación que desea realizar. Ejemplo:
+
+`echo $(expr 8 + 8)`
+
+Hoy en día es más habitual hacer el uso de `$((...))` doble paréntesis, para indicar que dentro de ella se realizará una operación aritmética. Ejemplo:
+
+`echo $((8 + 8))`
+
+Otro método es con la acción ``let`. Ejemplo:
+
+`let x=( 1 + 2 ); echo $x`
 
