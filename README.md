@@ -19,6 +19,7 @@ Fundamentos del SO de Linux.
  - [Condicional if](#condiciona-if).
   - [Pruebas de archivos](#pruebas-de-archivos).
   - [Pruebas con cadenas](#pruebas-con-cadenas).
+  - [Operadores relacionales](#operadores-relacioneales).
 
 
 ## Lineas de comando
@@ -412,7 +413,7 @@ fi
 
 ```
 
-#### Pruebas numericas
+#### Operadores relaciones
 
 Para comparar números en la sentencia del if, se tiene los siguientes operadores:
 
@@ -425,3 +426,25 @@ Para comparar números en la sentencia del if, se tiene los siguientes operadore
 | -lt | Menor que |
 | -ge | Mayor o igual que |
 | -le | Menor o igual que |
+
+Ejemplo:
+
+```shell
+
+#!bin/bash
+# Prompt for a user name...
+
+echo "Ingresa tu edad: "
+read AGE
+if ["$AGE" -lt 20] || ["$AGE" -ge 50]; then
+	echo "No esta en el rango 20-50.";
+	elif ["$AGE" -ge 20 ] && ["$AGE" -lt 30]; then
+		echo "Estas en los 20.";
+	elif ["$AGE" -ge 30] && ["$AGE" -lt 40]; then
+		echo "Estas en los 30.";
+	elif ["$AGE" -ge 40] && ["$AGE" -lt 50]; then
+		echo "Estas en los 40.";
+fi
+
+```
+
