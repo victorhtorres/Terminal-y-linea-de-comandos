@@ -19,7 +19,7 @@ Fundamentos del SO de Linux.
  - [Condicional if](#condiciona-if).
   - [Pruebas de archivos](#pruebas-de-archivos).
   - [Pruebas con cadenas](#pruebas-con-cadenas).
-  - [Operadores relacionales](#operadores-relacioneales).
+  - [Operadores relacionales](#operadores-relacionales).
 
 
 ## Lineas de comando
