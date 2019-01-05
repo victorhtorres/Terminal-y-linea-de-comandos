@@ -36,6 +36,7 @@ Fundamentos del SO de Linux.
 | cd | Cambiar de directorio. |
 | cd .. | Cambiar al directorio padre de la carpeta actual. |
 | cd / | Cambia al directorio raíz. |
+| pushd | Cambia a la ruta de directorio especificada. Con el comando `popd`, vuelve a la ubicación de directorio en la que estaba. |
 | ls | Lista todas las carpetas de la ruta actual. |
 | ls -a | Lista todas las carpetas de la ruta actual y también las que están ocultas. |
 | tree | Muestra las carpetas del sistema en arbol. |
