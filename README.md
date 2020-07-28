@@ -1,6 +1,8 @@
-# Linux
+# Terminal y línea de comandos
 
-Fundamentos del SO de Linux.
+Referencias rápidas de la terminal y línea de comandos en el sistema operativo GNU/Linux.
+
+Apuntes con base al curso de (Introducción a la Terminal y Línea de Comandos en Platzi)[https://platzi.com/clases/terminal/]
 
 ## Tabla de contenido
 - [Lineas de comando](#lineas-de-comando).
