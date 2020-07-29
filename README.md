@@ -21,6 +21,7 @@ Referencias rápidas de la terminal y línea de comandos en el sistema operativo
 - [El sistema de permisos octal](#El-sistema-de-permisos-octal).
 - [Sistemas de manejo de paquetes](#Sistemas-de-manejo-de-paquetes).
 - [Configuración de un servicio de mailing](#Configuración-de-un-servicio-de-mailing).
+- [Creación de llaves SSH](#Creación-de-llaves-SSH).
 - [Variables de entorno](#Variables-de-entorno).
 - [Shell Scripts](#shell-scripts).
    - [Imprimir Hello World](#imprimir-hello-world).
@@ -76,12 +77,13 @@ Están compuestos por:
 | cp [valor_a_copiar] [ruta_destino] | Copiar y pegar en una ruta o en un archivo nuevo. |
 | find [punto_origen_a_buscar] [opciones] [términos_busqueda] | Buscar un archivo en un lugar especifico o por tamaño, nombre, byte, etc... Ejemplo: `$ find . -user victor -perm 644`. Lo anterior, encuentra todo archivo o carpeta donde el propietario es victor y tenga permiso para leer y escribir. También se puede hacer un proceso seguido de los resultados, ejemplo: `$ find . -type f -mtime +7 -exec cp {} ./backup/ \;`. El `-exec` indica la ejecución de otro proceso seguido de la búsqueda. Los `{}` indica que esos caracteres serán reemplazados por cada resultado encontrado. El `\` indica la finalización del proceso. |
 | cat [nombre_archivo]  | Ver un archivo no tan pesado (que no proporcione desplazamiento). |
+| more [nombre_archivo] | Permite visualizar el contenido de un archivo por paginación. |
 | tac | Para ver un archivo desde la última linea en adelante (backwards). |
 | less [nombre_archivo] | Para ver el contenido de un archivo pesado. Proporciona scroll-back y opciones de búsqueda. Se debe presionar `q` para salir de la lectura. |
 | tail [nombre_archivo] | Muestra las últimas 10 lineas del archivo. Para cambiar la cantidad de lineas a mostrar, se coloca `-n` donde n es la cantidad de lineas a mostrar. |
 | head [nombre_archivo] | Muestras las primeras tres lineas del archivo. También se puede usar `-n` para definir la cantidad  de lineas a mostrar. |
 | touch [nombre_archivo] | Crea un archivo. |
-| mkdir [nombre_carpeta] | Crea una carpeta. | 
+| mkdir [nombre_carpeta] | Crea una carpeta. |
 | rmdir [nombre_carpeta] | Borra una carpeta (solo si está vacía). |
 | mv [nombre_archivo_actual] [nombre_archivo_nuevo] | Renombra un archivo. |
 | rm [nombre_archivo] | Eliminar un archivo. |
@@ -149,6 +151,7 @@ Los siguientes comandos, nos permite realizar conexiones seguras a otros disposi
 | df -Th | Muestra una estadísticas del uso de los archivos de sistema y su capacidad de espacio en disco. |
 | ps | Produce una lista de los procesos junto con la información de estado del sistema. |
 | nano | Editor de texto por defecto. |
+| history | Histórico de todos los comandos que hemos hecho. Si escribimos por ejemplo `$ !248`, la terminal ejecutará el comando que estaba asociado al id 248 del histórico. |
 
 ## Directorios
 La definición de directorios en Linux:
@@ -333,6 +336,19 @@ Reiniciar el servicio postfix:
 `$ sudo service postfix restart`
 
 Revisa tu correo (no olvides revisar la bandeja de no deseados!).
+
+## Creación de llaves SSH
+Es la forma que tenemos para autenticarnos con los servidores.
+
+- Son llaves asimétricas: Se tiene una llave pública y una llave privada.
+- Permiten una conexión fácil y segura a servidores.
+
+Crear la llave:
+
+`$ ssh-keygen -t rsa -b 4096 -C "This is a key"`
+
+- `rsa` es el algoritmo que genera la llave ssh.
+- `-b` indica la cantidad de bits que tendrá la llave.
 
 ## Variables de entorno
 Es una definición global en el sistema, el cual todos los procesos tienen acceso, por ejemplo: Cuando usamos el programa `$ curl`, estamos usando implícitamente el valor de la variable de entorno `$PATH`,el cual tiene almacenado las rutas de los programas binarios. Por esa razón, no es necesario escribir toda la ruta del programa curl al usarlo en la terminal.
