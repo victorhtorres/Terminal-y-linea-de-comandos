@@ -445,8 +445,6 @@ $ echo $?
 
 ```
 
-Ejemplo 
-
 ### Sintaxis basica y caracteres especiales
 
 | Caracter | Descripción |
@@ -550,7 +548,7 @@ Número de parámetros: 2
 ```
 
 ### Condicional if
-Una condición es evaluada y si es exitosa, se realiza lo que está dentro del "then", de lo contrario, se ejecuta el "else".
+Se evalua una condición. Si es exitosa, se realiza lo que está dentro del "then", de lo contrario, se ejecuta el "else".
 - Una condición puede devolver 0, para el caso exitoso.
 - Se puede hacer comparaciones numéricas o de cadenas.
 - Validar existencia de archivos o permisos.
