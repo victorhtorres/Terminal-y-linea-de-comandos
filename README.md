@@ -166,7 +166,7 @@ La definición de directorios en Linux:
 | /var | Contiene archivos que se espera que cambien de tamaño y contenido cuando el sistema está en funcionamiento (var significa variable). |
 | /etc | Es el home de los archivos de configuración del sistema. No contiene programas binarios, aunque hay algunas secuencias de comandos ejecutables |
 | /boot | Contiene los pocos archivos esenciales necesarios para arrancar el sistema. |
-| /lib | Contiene las librerias (código común compartida por las aplicaciones y necesario para ellos para correr) para los programas esenciales en / bin y / sbin |
+| /lib | Contiene las librerias (código común compartida por las aplicaciones) para los programas esenciales en / bin y / sbin |
 | /media | Normalmente donde se encuentra en donde se montan los medios extraíbles, como CD, DVD y unidades USB. |
 | /opt | Paquetes de aplicaciones de software opcionales. |
 | /sys | Pseudo sistema de archivos virtual con información sobre el sistema y el hardware. Puede ser utilizado para modificar los parámetros del sistema y para fines de depuración. |
