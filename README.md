@@ -146,7 +146,7 @@ Los siguientes comandos, nos permite realizar conexiones seguras a otros disposi
 ### Utilitaria
 | Comando | Descripción |
 | ----- | ---- |
-| `$ command1 pipeline command2 pipeline command3` | Pipeline o tuberias. Toma un proceso para pasarlo a otro proceso como entrada. Los procesos se separan por el simbolo pipeline (no se escribe acá porque interfiere con la sintáxis de markdown para tablas). Ejemplo: `$ cat dump1.sql pipeline wc -l`. Lo anterior me indica cuantas líneas tiene el archivo dump1.sql |
+| command1 <html>&#124;</html> command2 <html>&#124;</html> command3 | Pipeline o tuberias. Toma un proceso para pasarlo a otro proceso como entrada. Los procesos se separan por el simbolo pipeline. Ejemplo: cat dump1.sql <html>&#124;</html> wc -l. Lo anterior, indica cuantas líneas tiene el archivo dump1.sql |
 | clear | Borra el historial de impresiones que tenga la consola. |
 | df -Th | Muestra una estadísticas del uso de los archivos de sistema y su capacidad de espacio en disco. |
 | ps | Produce una lista de los procesos junto con la información de estado del sistema. |
